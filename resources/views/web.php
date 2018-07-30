@@ -10,7 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+/*
 Route::get('new_page1', function () {
     return view('new_page1');
 })->name('new_page1');
@@ -47,7 +47,7 @@ Route::get('hello','HelloController@index');
 Route::get('pass','NewPassController@pass')
 ->name('pass');
 
-
+*/
 Route::get('/foo',function(){
 	return view('foo');
 })->name('foo');
@@ -78,9 +78,3 @@ Route::get('/basic-arithmetic/{operator?}/{n1?}/{n2?}', function($operator=null,
 Route::get('/dasdasddsda',function(){
 	return view('dasdasddsda');
 })->name('dasdasddsda');
-
-
-
-Route::get('/middleware/{age}',function($age){
-	return view('age', array('age' => $age));
-})->middleware('age');
